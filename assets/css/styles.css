@@ -385,6 +385,7 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -55px;
 }
 
 .espejo {
@@ -973,7 +974,7 @@ button:active {
 
   .contenido-ceremonia {
     width: 82%;
-    padding-top: 25px;
+    top: 40%;
   }
 
   .contenido-ceremonia h2 {

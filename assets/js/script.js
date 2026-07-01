@@ -24,10 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // WhatsApp link dinámico
-  const waNumber = "527731022153";
+  const waNumber = "522226140837";
   const waMessage =
-    "¡Hola! Confirmo con mucho gusto mi asistencia a la graduación de Melody Viveros Ramos 🎓✨";
-
+    "¡Hola! Confirmo con mucho gusto mi asistencia a la graduación de la Generación 2023-2026 del Colegio América Secundaria 🎓✨";
   document.getElementById("waLink").href =
     `https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`;
 
@@ -161,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-const fechaEvento = new Date(2026, 6, 18, 15, 0, 0).getTime();
+const fechaEvento = new Date(2026, 6, 17, 19, 30, 0).getTime();
 // Año, Mes (0=Enero, 2=Marzo), Día, Hora en formato 24h
 
 const contador = setInterval(function () {

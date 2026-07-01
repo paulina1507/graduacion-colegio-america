@@ -321,7 +321,7 @@ button:active {
 
 .princesa {
 
-  height: clamp(180px, 28vw, 320px);
+  height: clamp(280px, 28vw, 320px);
 
   object-fit: contain;
 
@@ -1187,27 +1187,18 @@ button:active {
 
   position: relative;
   z-index: 20;
-
+  margin-top: 35px;
   margin-bottom: 8px;
 }
 
 .titulo-seccion h2 {
-
   font-family: 'Playfair Display', serif;
-
-  font-size: clamp(2rem, 5vw, 3.2rem);
-
+  font-size: clamp(1.4rem, 3vw, 2rem);
   line-height: 1.1;
-
-  letter-spacing: 4px;
-
+  letter-spacing: 3px;
   color: #f4c430;
-
   text-transform: uppercase;
-
-  text-shadow:
-    0 4px 18px rgba(0, 0, 0, .22);
-
+  text-shadow: 0 4px 18px rgba(0, 0, 0, .22);
   margin: 0;
 }
 
@@ -1231,24 +1222,55 @@ button:active {
 .lema {
   margin: 18px 0 32px;
   font-size: 20px;
-  color: rgba(255,255,255,.8);
+  color: rgba(255, 255, 255, .8);
   font-style: italic;
 }
 
 .texto-contador {
   font-size: 18px;
   font-weight: 500;
-  color: rgba(255,255,255,.92);
+  color: rgba(255, 255, 255, .92);
   text-align: center;
   letter-spacing: .5px;
 }
 
-.separador{
-    width: 70px;
-    height: 2px;
-    margin: 10px auto 30px;
-    background: linear-gradient(to right,
-        transparent,
-        rgba(244,196,48,.9),
-        transparent);
+.separador {
+  width: 70px;
+  height: 2px;
+  margin: 10px auto 30px;
+  background: linear-gradient(to right,
+      transparent,
+      rgba(244, 196, 48, .9),
+      transparent);
+}
+
+/* ===== Fondos por sección ===== */
+.ceremonia::before,
+.confirmacion::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: .9;
+  /* o el valor que prefieras */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Solo el contenido principal arriba del fondo */
+.titulo-seccion,
+.marco-espejo,
+.contenido-final {
+  position: relative;
+  z-index: 2;
+}
+
+.ceremonia::before {
+  background-image: url("../img/fondo-detalles.png");
+}
+
+.confirmacion::before {
+  background-image: url("../img/fondo-confirmacion.png");
 }
